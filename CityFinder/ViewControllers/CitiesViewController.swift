@@ -46,6 +46,9 @@ class CitiesViewController: UIViewController, UITableViewDataSource, UITableView
         tableView.layoutMargins = UIEdgeInsets.zero
         tableView.separatorInset = UIEdgeInsets.zero
         
+        // Disable double selection
+        tableView.isMultipleTouchEnabled = false
+        
     }
     
     // MARK: - Extract data method
