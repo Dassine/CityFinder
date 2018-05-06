@@ -10,7 +10,7 @@
 		235057CF209DBB3B0092709F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235057CE209DBB3B0092709F /* AppDelegate.swift */; };
 		235057D4209DBB3B0092709F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 235057D2209DBB3B0092709F /* Main.storyboard */; };
 		235057D9209DBB3B0092709F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 235057D7209DBB3B0092709F /* LaunchScreen.storyboard */; };
-		235057E4209DBB3B0092709F /* GeolocalizedCitiesListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235057E3209DBB3B0092709F /* GeolocalizedCitiesListTests.swift */; };
+		235057E4209DBB3B0092709F /* CityFinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235057E3209DBB3B0092709F /* GeolocalizedCitiesListTests.swift */; };
 		23505803209DC3860092709F /* CitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23505802209DC3860092709F /* CitiesViewController.swift */; };
 		23505805209DC4D30092709F /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23505804209DC4D30092709F /* MapViewController.swift */; };
 		235E5EAB209DF8700011AB66 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 235E5EA9209DF8700011AB66 /* Assets.xcassets */; };
@@ -27,22 +27,22 @@
 			containerPortal = 235057C3209DBB3A0092709F /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 235057CA209DBB3B0092709F;
-			remoteInfo = GeolocalizedCitiesList;
+			remoteInfo = CityFinder;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		235057CB209DBB3B0092709F /* GeolocalizedCitiesList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeolocalizedCitiesList.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		235057CB209DBB3B0092709F /* CityFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CityFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		235057CE209DBB3B0092709F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		235057D3209DBB3B0092709F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		235057D8209DBB3B0092709F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		235057DF209DBB3B0092709F /* GeolocalizedCitiesListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeolocalizedCitiesListTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		235057E3209DBB3B0092709F /* GeolocalizedCitiesListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeolocalizedCitiesListTests.swift; sourceTree = "<group>"; };
+		235057DF209DBB3B0092709F /* CityFinderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CityFinderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		235057E3209DBB3B0092709F /* CityFinderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeolocalizedCitiesListTests.swift; sourceTree = "<group>"; };
 		235057F0209DBB3B0092709F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		23505802209DC3860092709F /* CitiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesViewController.swift; sourceTree = "<group>"; };
 		23505804209DC4D30092709F /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		235E5EA9209DF8700011AB66 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		235E5EAD209DF8D50011AB66 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = GeolocalizedCitiesList/Info.plist; sourceTree = "<group>"; };
+		235E5EAD209DF8D50011AB66 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = CityFinder/Info.plist; sourceTree = "<group>"; };
 		235E5EB0209E2BDE0011AB66 /* SearchFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFooterView.swift; sourceTree = "<group>"; };
 		23881C4D209DD94F009E9D96 /* cities.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cities.json; sourceTree = "<group>"; };
 		239BF117209EE69B00CDE6FC /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
@@ -71,9 +71,9 @@
 		235057C2209DBB3A0092709F = {
 			isa = PBXGroup;
 			children = (
-				235057CD209DBB3B0092709F /* GeolocalizedCitiesList */,
+				235057CD209DBB3B0092709F /* CityFinder */,
 				235E5EAD209DF8D50011AB66 /* Info.plist */,
-				235057E2209DBB3B0092709F /* GeolocalizedCitiesListTests */,
+				235057E2209DBB3B0092709F /* CityFinderTests */,
 				235057CC209DBB3B0092709F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -81,13 +81,13 @@
 		235057CC209DBB3B0092709F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				235057CB209DBB3B0092709F /* GeolocalizedCitiesList.app */,
-				235057DF209DBB3B0092709F /* GeolocalizedCitiesListTests.xctest */,
+				235057CB209DBB3B0092709F /* CityFinder.app */,
+				235057DF209DBB3B0092709F /* CityFinderTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		235057CD209DBB3B0092709F /* GeolocalizedCitiesList */ = {
+		235057CD209DBB3B0092709F /* CityFinder */ = {
 			isa = PBXGroup;
 			children = (
 				235057CE209DBB3B0092709F /* AppDelegate.swift */,
@@ -98,16 +98,16 @@
 				235057FC209DC15E0092709F /* ViewControllers */,
 				235057FD209DC1910092709F /* Resources */,
 			);
-			path = GeolocalizedCitiesList;
+			path = CityFinder;
 			sourceTree = "<group>";
 		};
-		235057E2209DBB3B0092709F /* GeolocalizedCitiesListTests */ = {
+		235057E2209DBB3B0092709F /* CityFinderTests */ = {
 			isa = PBXGroup;
 			children = (
-				235057E3209DBB3B0092709F /* GeolocalizedCitiesListTests.swift */,
+				235057E3209DBB3B0092709F /* CityFinderTests.swift */,
 				235057F0209DBB3B0092709F /* Info.plist */,
 			);
-			path = GeolocalizedCitiesListTests;
+			path = CityFinderTests;
 			sourceTree = "<group>";
 		};
 		235057FC209DC15E0092709F /* ViewControllers */ = {
@@ -149,9 +149,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		235057CA209DBB3B0092709F /* GeolocalizedCitiesList */ = {
+		235057CA209DBB3B0092709F /* CityFinder */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 235057F3209DBB3B0092709F /* Build configuration list for PBXNativeTarget "GeolocalizedCitiesList" */;
+			buildConfigurationList = 235057F3209DBB3B0092709F /* Build configuration list for PBXNativeTarget "CityFinder" */;
 			buildPhases = (
 				235057C7209DBB3B0092709F /* Sources */,
 				235057C8209DBB3B0092709F /* Frameworks */,
@@ -161,14 +161,14 @@
 			);
 			dependencies = (
 			);
-			name = GeolocalizedCitiesList;
-			productName = GeolocalizedCitiesList;
-			productReference = 235057CB209DBB3B0092709F /* GeolocalizedCitiesList.app */;
+			name = CityFinder;
+			productName = CityFinder;
+			productReference = 235057CB209DBB3B0092709F /* CityFinder.app */;
 			productType = "com.apple.product-type.application";
 		};
-		235057DE209DBB3B0092709F /* GeolocalizedCitiesListTests */ = {
+		235057DE209DBB3B0092709F /* CityFinderTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 235057F6209DBB3B0092709F /* Build configuration list for PBXNativeTarget "GeolocalizedCitiesListTests" */;
+			buildConfigurationList = 235057F6209DBB3B0092709F /* Build configuration list for PBXNativeTarget "CityFinderTests" */;
 			buildPhases = (
 				235057DB209DBB3B0092709F /* Sources */,
 				235057DC209DBB3B0092709F /* Frameworks */,
@@ -179,9 +179,9 @@
 			dependencies = (
 				235057E1209DBB3B0092709F /* PBXTargetDependency */,
 			);
-			name = GeolocalizedCitiesListTests;
-			productName = GeolocalizedCitiesListTests;
-			productReference = 235057DF209DBB3B0092709F /* GeolocalizedCitiesListTests.xctest */;
+			name = CityFinderTests;
+			productName = CityFinderTests;
+			productReference = 235057DF209DBB3B0092709F /* CityFinderTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -205,7 +205,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 235057C6209DBB3A0092709F /* Build configuration list for PBXProject "GeolocalizedCitiesList" */;
+			buildConfigurationList = 235057C6209DBB3A0092709F /* Build configuration list for PBXProject "CityFinder" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -218,8 +218,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				235057CA209DBB3B0092709F /* GeolocalizedCitiesList */,
-				235057DE209DBB3B0092709F /* GeolocalizedCitiesListTests */,
+				235057CA209DBB3B0092709F /* CityFinder */,
+				235057DE209DBB3B0092709F /* CityFinderTests */,
 			);
 		};
 /* End PBXProject section */
@@ -264,7 +264,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				235057E4209DBB3B0092709F /* GeolocalizedCitiesListTests.swift in Sources */,
+				235057E4209DBB3B0092709F /* CityFinderTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,7 +273,7 @@
 /* Begin PBXTargetDependency section */
 		235057E1209DBB3B0092709F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 235057CA209DBB3B0092709F /* GeolocalizedCitiesList */;
+			target = 235057CA209DBB3B0092709F /* CityFinder */;
 			targetProxy = 235057E0209DBB3B0092709F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -411,9 +411,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GQ5H36ADAP;
-				INFOPLIST_FILE = GeolocalizedCitiesList/Info.plist;
+				INFOPLIST_FILE = CityFinder/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = dalibel.GeolocalizedCitiesList;
+				PRODUCT_BUNDLE_IDENTIFIER = dalibel.CityFinder;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -426,9 +426,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GQ5H36ADAP;
-				INFOPLIST_FILE = GeolocalizedCitiesList/Info.plist;
+				INFOPLIST_FILE = CityFinder/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = dalibel.GeolocalizedCitiesList;
+				PRODUCT_BUNDLE_IDENTIFIER = dalibel.CityFinder;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -442,13 +442,13 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GQ5H36ADAP;
-				INFOPLIST_FILE = GeolocalizedCitiesListTests/Info.plist;
+				INFOPLIST_FILE = CityFinderTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = dalibel.GeolocalizedCitiesListTests;
+				PRODUCT_BUNDLE_IDENTIFIER = dalibel.CityFinderTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GeolocalizedCitiesList.app/GeolocalizedCitiesList";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CityFinder.app/CityFinder";
 			};
 			name = Debug;
 		};
@@ -459,20 +459,20 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GQ5H36ADAP;
-				INFOPLIST_FILE = GeolocalizedCitiesListTests/Info.plist;
+				INFOPLIST_FILE = CityFinderTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = dalibel.GeolocalizedCitiesListTests;
+				PRODUCT_BUNDLE_IDENTIFIER = dalibel.CityFinderTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GeolocalizedCitiesList.app/GeolocalizedCitiesList";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CityFinder.app/CityFinder";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		235057C6209DBB3A0092709F /* Build configuration list for PBXProject "GeolocalizedCitiesList" */ = {
+		235057C6209DBB3A0092709F /* Build configuration list for PBXProject "CityFinder" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				235057F1209DBB3B0092709F /* Debug */,
@@ -481,7 +481,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		235057F3209DBB3B0092709F /* Build configuration list for PBXNativeTarget "GeolocalizedCitiesList" */ = {
+		235057F3209DBB3B0092709F /* Build configuration list for PBXNativeTarget "CityFinder" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				235057F4209DBB3B0092709F /* Debug */,
@@ -490,7 +490,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		235057F6209DBB3B0092709F /* Build configuration list for PBXNativeTarget "GeolocalizedCitiesListTests" */ = {
+		235057F6209DBB3B0092709F /* Build configuration list for PBXNativeTarget "CityFinderTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				235057F7209DBB3B0092709F /* Debug */,

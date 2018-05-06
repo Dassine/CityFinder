@@ -1,6 +1,6 @@
 //
 //  CitiesTableViewController.swift
-//  GeolocalizedCitiesList
+//  CityFinder
 //
 //  Created by D. on 2018-05-05.
 //  Copyright © 2018 Lilia Dassine BELAID. All rights reserved.

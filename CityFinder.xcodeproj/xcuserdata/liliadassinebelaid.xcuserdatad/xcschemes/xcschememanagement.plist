@@ -4,10 +4,23 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>GeolocalizedCitiesList.xcscheme</key>
+		<key>CityFinder.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>235057CA209DBB3B0092709F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>235057DE209DBB3B0092709F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

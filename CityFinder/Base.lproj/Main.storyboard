@@ -13,7 +13,7 @@
         <!--Map View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="MapViewController" customModule="GeolocalizedCitiesList" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MapViewController" customModule="CityFinder" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -40,7 +40,7 @@
         <!--Cities-->
         <scene sceneID="cVZ-cp-7ej">
             <objects>
-                <viewController storyboardIdentifier="CitiesViewController" title="Cities" id="8Cp-u7-ufq" customClass="CitiesViewController" customModule="GeolocalizedCitiesList" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CitiesViewController" title="Cities" id="8Cp-u7-ufq" customClass="CitiesViewController" customModule="CityFinder" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rJl-a0-Up8">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -79,7 +79,7 @@
                                     <outlet property="delegate" destination="8Cp-u7-ufq" id="7hX-W7-92g"/>
                                 </connections>
                             </tableView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZCp-LT-VZC" customClass="SearchFooterView" customModule="GeolocalizedCitiesList" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZCp-LT-VZC" customClass="SearchFooterView" customModule="CityFinder" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="623" width="375" height="44"/>
                                 <color key="backgroundColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
