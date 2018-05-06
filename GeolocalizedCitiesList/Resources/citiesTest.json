@@ -1,0 +1,8 @@
+ [
+  {"country":"US","name":"Alabama","_id":1,"coord":{"lon":-86.902298,"lat":32.318230}},
+  {"country":"US","name":"Albuquerque","_id":2,"coord":{"lon":-106.621216,"lat":335.113281}},
+  {"country":"US","name":"Anaheim","_id":3,"coord":{"lon":-117.914505,"lat":33.835293}},
+  {"country":"US","name":"Arizona","_id":4,"coord":{"lon":-111.093735,"lat":34.048927}},
+  {"country":"AU","name":"Sydney","_id":5,"coord":{"lon":151.218002,"lat":-33.976002}}
+]
+

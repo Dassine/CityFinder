@@ -17,11 +17,15 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
     
     override func viewDidAppear(_ animated: Bool) {
         if let city = city {
+            // Set City location on the displayed map
             if let lat = city.coord.lat, let long = city.coord.lon {
                 let center = CLLocationCoordinate2D(latitude: lat, longitude: long)
                 let region = MKCoordinateRegion(center: center, span: MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1))
+                
                 mapView.setRegion(region, animated: true)
             }
+            
+            // Set Navigation Bar title
             navigationItem.title = city.name + " - " + city.country
         }
     }

@@ -40,7 +40,7 @@
         <!--Cities-->
         <scene sceneID="cVZ-cp-7ej">
             <objects>
-                <viewController title="Cities" id="8Cp-u7-ufq" customClass="CitiesTableViewController" customModule="GeolocalizedCitiesList" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CitiesViewController" title="Cities" id="8Cp-u7-ufq" customClass="CitiesViewController" customModule="GeolocalizedCitiesList" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rJl-a0-Up8">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -120,7 +120,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="PN7-5D-l5n">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="tintColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </navigationBar>
                     <connections>
                         <segue destination="8Cp-u7-ufq" kind="relationship" relationship="rootViewController" id="YFc-x3-sJf"/>

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CitiesTableViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class CitiesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     private static let kJsonFileName:String = "cities"
     private static let kJsonFileExtension:String = "json"
@@ -23,14 +23,19 @@ class CitiesTableViewController: UIViewController, UITableViewDataSource, UITabl
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        getCities()
+        
+        // The list of cities will be displayed as a compact table view, scrollable list, easy to select items and simple forwards/backwards navigtaion. This regarding the content available to display. The search will be available by pulling down the as disigned for Mail, Apple app.
+        
+        // Get Cities from Json File
+        getCities(from: CitiesViewController.kJsonFileName)
         
         // Setup the Search Controller
         searchController.searchResultsUpdater = self as UISearchResultsUpdating
         searchController.obscuresBackgroundDuringPresentation = false
         searchController.searchBar.placeholder = "Search Cities"
         searchController.searchBar.delegate = self
+        searchController.searchBar.delegate = self
+        UIBarButtonItem.appearance(whenContainedInInstancesOf: [UISearchBar.self]).tintColor = .black
         navigationItem.searchController = searchController
         definesPresentationContext = true
         
@@ -38,25 +43,19 @@ class CitiesTableViewController: UIViewController, UITableViewDataSource, UITabl
         tableView.tableFooterView = searchFooter
         
         // Remove left EdgeInsets of tabkeView
-        //tableView.layoutMargins = UIEdgeInsets.zero
-        //tableView.separatorInset = UIEdgeInsets.zero
+        tableView.layoutMargins = UIEdgeInsets.zero
+        tableView.separatorInset = UIEdgeInsets.zero
         
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
     
-    // MARK: - Table view data source
+    // MARK: - Extract data method
     
-    func getCities() {
+    func getCities(from fileName: String) {
         
         cities.removeAll()
         filteredCities.removeAll()
         
-        guard let url = Bundle.main.url(forResource:CitiesTableViewController.kJsonFileName, withExtension:CitiesTableViewController.kJsonFileExtension) else { return }
+        guard let url = Bundle.main.url(forResource:fileName, withExtension:CitiesViewController.kJsonFileExtension) else { return }
         
         do {
             let data = try Data(contentsOf: url)
@@ -71,6 +70,24 @@ class CitiesTableViewController: UIViewController, UITableViewDataSource, UITabl
         } catch let jsonError {
             print("Error! Could not decode JSON: \(jsonError.localizedDescription)")
         }
+    }
+    
+    // MARK: - Filtering/Search methods
+    
+    func filterContentForSearchText(_ searchText: String) {
+        filteredCities = cities.filter({( city ) -> Bool in
+            return city.name.lowercased().contains(searchText.lowercased())
+        })
+        tableView.reloadData()
+    }
+    
+    func searchBarIsEmpty() -> Bool {
+        return searchController.searchBar.text?.isEmpty ?? true
+    }
+    
+    func isFiltering() -> Bool {
+        let searchBarScopeIsFiltering = searchController.searchBar.selectedScopeButtonIndex != 0
+        return (!searchBarIsEmpty() || searchBarScopeIsFiltering)
     }
     
     // MARK: - Table View
@@ -111,24 +128,6 @@ class CitiesTableViewController: UIViewController, UITableViewDataSource, UITabl
         self.performSegue(withIdentifier: "ShowMapViewController", sender: city)
     }
     
-    // MARK: - Private instance methods
-    
-    func filterContentForSearchText(_ searchText: String) {
-        filteredCities = cities.filter({( city ) -> Bool in
-            return city.name.lowercased().contains(searchText.lowercased())
-        })
-        tableView.reloadData()
-    }
-    
-    func searchBarIsEmpty() -> Bool {
-        return searchController.searchBar.text?.isEmpty ?? true
-    }
-    
-    func isFiltering() -> Bool {
-        let searchBarScopeIsFiltering = searchController.searchBar.selectedScopeButtonIndex != 0
-        return searchController.isActive && (!searchBarIsEmpty() || searchBarScopeIsFiltering)
-    }
-    
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "ShowMapViewController",
@@ -139,14 +138,14 @@ class CitiesTableViewController: UIViewController, UITableViewDataSource, UITabl
     }
 }
 
-extension CitiesTableViewController: UISearchBarDelegate {
+extension CitiesViewController: UISearchBarDelegate {
     // MARK: - UISearchBar Delegate
     func searchBar(_ searchBar: UISearchBar) {
         filterContentForSearchText(searchBar.text!)
     }
 }
 
-extension CitiesTableViewController: UISearchResultsUpdating {
+extension CitiesViewController: UISearchResultsUpdating {
     // MARK: - UISearchResultsUpdating Delegate
     func updateSearchResults(for searchController: UISearchController) {
         filterContentForSearchText(searchController.searchBar.text!)

@@ -22,7 +22,7 @@
                                 <rect key="frame" x="67" y="269" width="240" height="128"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CITIES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Shj-OL-UeK">
-                                <rect key="frame" x="156" y="423" width="63.5" height="21"/>
+                                <rect key="frame" x="156" y="423" width="63.5" height="30"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -33,7 +33,7 @@
                             <constraint firstItem="Shj-OL-UeK" firstAttribute="top" secondItem="Y9D-j6-ehT" secondAttribute="bottom" constant="26" id="3Ns-Z2-D17"/>
                             <constraint firstItem="Shj-OL-UeK" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="6BU-ZN-iST"/>
                             <constraint firstItem="Y9D-j6-ehT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="249" id="CMS-Tn-7uZ"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Shj-OL-UeK" secondAttribute="bottom" constant="223" id="CXU-AA-VHd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Shj-OL-UeK" secondAttribute="bottom" constant="214" id="CXU-AA-VHd"/>
                             <constraint firstItem="Y9D-j6-ehT" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="U1a-ou-0QK"/>
                             <constraint firstItem="Y9D-j6-ehT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="67" id="qfI-pY-WKB"/>
                             <constraint firstItem="Y9D-j6-ehT" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="yUT-T8-kuE"/>
