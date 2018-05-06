@@ -16,7 +16,10 @@
 		23505805209DC4D30092709F /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23505804209DC4D30092709F /* MapViewController.swift */; };
 		235E5EAB209DF8700011AB66 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 235E5EA9209DF8700011AB66 /* Assets.xcassets */; };
 		235E5EAE209DF8D50011AB66 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 235E5EAD209DF8D50011AB66 /* Info.plist */; };
+		235E5EB1209E2BDE0011AB66 /* SearchFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235E5EB0209E2BDE0011AB66 /* SearchFooterView.swift */; };
 		23881C4E209DD950009E9D96 /* cities.json in Resources */ = {isa = PBXBuildFile; fileRef = 23881C4D209DD94F009E9D96 /* cities.json */; };
+		239BF118209EE69B00CDE6FC /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239BF117209EE69B00CDE6FC /* City.swift */; };
+		239BF11A209EE6C700CDE6FC /* Coodinates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239BF119209EE6C700CDE6FC /* Coodinates.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,7 +53,10 @@
 		23505804209DC4D30092709F /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		235E5EA9209DF8700011AB66 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		235E5EAD209DF8D50011AB66 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = GeolocalizedCitiesList/Info.plist; sourceTree = "<group>"; };
+		235E5EB0209E2BDE0011AB66 /* SearchFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFooterView.swift; sourceTree = "<group>"; };
 		23881C4D209DD94F009E9D96 /* cities.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cities.json; sourceTree = "<group>"; };
+		239BF117209EE69B00CDE6FC /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
+		239BF119209EE6C700CDE6FC /* Coodinates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coodinates.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,8 +108,10 @@
 		235057CD209DBB3B0092709F /* GeolocalizedCitiesList */ = {
 			isa = PBXGroup;
 			children = (
-				235057FD209DC1910092709F /* Resources */,
+				239BF116209EE67700CDE6FC /* Models */,
+				235E5EAF209E2BB20011AB66 /* Views */,
 				235057FC209DC15E0092709F /* ViewControllers */,
+				235057FD209DC1910092709F /* Resources */,
 				235057CE209DBB3B0092709F /* AppDelegate.swift */,
 				235057D2209DBB3B0092709F /* Main.storyboard */,
 				235057D7209DBB3B0092709F /* LaunchScreen.storyboard */,
@@ -144,6 +152,23 @@
 				23881C4D209DD94F009E9D96 /* cities.json */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		235E5EAF209E2BB20011AB66 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				235E5EB0209E2BDE0011AB66 /* SearchFooterView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		239BF116209EE67700CDE6FC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				239BF117209EE69B00CDE6FC /* City.swift */,
+				239BF119209EE6C700CDE6FC /* Coodinates.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -283,7 +308,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				23505803209DC3860092709F /* CitiesTableViewController.swift in Sources */,
+				239BF118209EE69B00CDE6FC /* City.swift in Sources */,
+				235E5EB1209E2BDE0011AB66 /* SearchFooterView.swift in Sources */,
 				23505805209DC4D30092709F /* MapViewController.swift in Sources */,
+				239BF11A209EE6C700CDE6FC /* Coodinates.swift in Sources */,
 				235057CF209DBB3B0092709F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

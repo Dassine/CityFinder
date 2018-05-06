@@ -7,29 +7,22 @@
 //
 
 import UIKit
+import MapKit
 
-class MapViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBOutlet var mapView: MKMapView!
+    
+    var city: City?
+    
+    override func viewDidAppear(_ animated: Bool) {
+        if let city = city {
+            if let lat = city.coord.lat, let long = city.coord.lon {
+                let center = CLLocationCoordinate2D(latitude: lat, longitude: long)
+                let region = MKCoordinateRegion(center: center, span: MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1))
+                mapView.setRegion(region, animated: true)
+            }
+            navigationItem.title = city.name + " - " + city.country
+        }
     }
-    */
-
 }
