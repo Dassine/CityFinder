@@ -58,20 +58,23 @@ class CitiesViewController: UIViewController, UITableViewDataSource, UITableView
         cities.removeAll()
         filteredCities.removeAll()
         
-        guard let url = Bundle.main.url(forResource:fileName, withExtension:CitiesViewController.kJsonFileExtension) else { return }
-        
-        do {
-            let data = try Data(contentsOf: url)
+        DispatchQueue.global().async {
             
-            cities = try JSONDecoder().decode([City].self, from: data).sorted(by: { ($0.name) < ($1.name) })
-            filteredCities = cities
+            guard let url = Bundle.main.url(forResource:fileName, withExtension:CitiesViewController.kJsonFileExtension) else { return }
             
-            DispatchQueue.main.async {
-                self.tableView.reloadData()
+            do {
+                let data = try Data(contentsOf: url)
+                
+                self.cities = try JSONDecoder().decode([City].self, from: data).sorted(by: { ($0.name) < ($1.name) })
+                self.filteredCities = self.cities
+                
+                DispatchQueue.main.async {
+                    self.tableView.reloadData()
+                }
+                
+            } catch let jsonError {
+                print("Error! Could not decode JSON: \(jsonError.localizedDescription)")
             }
-            
-        } catch let jsonError {
-            print("Error! Could not decode JSON: \(jsonError.localizedDescription)")
         }
     }
     
